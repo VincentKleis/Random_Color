@@ -6,11 +6,11 @@
 function Random_color(){
     let color, value1, value2, value3
     color = document.getElementById("background");
-    color_value = document.getElementById("header")
-    value1 = Math.floor(Math.random() * 256)
-    value2 = Math.floor(Math.random() * 256)
-    value3 = Math.floor(Math.random() * 256)
-    random_rgb =  `rgb(${value1}, ${value2}, ${value3})`
+    color_value = document.getElementById("header").innerHTML;
+    value1 = Math.floor(Math.random() * 256);
+    value2 = Math.floor(Math.random() * 256);
+    value3 = Math.floor(Math.random() * 256);
+    random_rgb =  `rgb(${value1}, ${value2}, ${value3})`;
     color_value = "Curent color is: "+random_rgb
     color.style.backgroundColor = random_rgb
 }    
