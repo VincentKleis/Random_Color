@@ -6,12 +6,16 @@
 function Random_color(){
     let color, value1, value2, value3
     color = document.getElementById("background");
+    color_value = document.getElementById("header")
     value1 = Math.floor(Math.random() * 256)
     value2 = Math.floor(Math.random() * 256)
     value3 = Math.floor(Math.random() * 256)
-    color.style.backgroundColor = `rgb(${value1}, ${value2}, ${value3})`
+    random_rgb =  `rgb(${value1}, ${value2}, ${value3})`
+    color_value = "Curent color is: "+random_rgb
+    color.style.backgroundColor = random_rgb
 }    
 </script>
+<H1 id="header">Curent color is: Azure</H1>
 <button type="button" onclick="Random_color()"> Random new color</button>
 </body>
 </html>
